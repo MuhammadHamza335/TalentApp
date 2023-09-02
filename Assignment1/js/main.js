@@ -6,7 +6,20 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+function openSearch() {
+  var searchContainer = document.querySelector(".search-container");
+  var searchInput = document.querySelector("#searchInput");
 
+  // Toggle the 'active' class to show/hide the search input
+  searchContainer.classList.toggle("active");
+
+  // Focus on the input field when it's displayed
+  if (searchContainer.classList.contains("active")) {
+    searchInput.focus();
+  } else {
+    searchInput.blur();
+  }
+}
 const teamMembersData = [
   {
     name: "Muhammad Hamza",

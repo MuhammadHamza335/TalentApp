@@ -2,6 +2,36 @@
   margin: 0;
   padding: 0;
 }
+.search-container {
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+}
+
+#searchInput {
+  display: none;
+  padding: 7px 3px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 8px;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.search-icon {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.search-container.active #searchInput {
+  display: block;
+  width: 150px;
+}
 .topnav {
   overflow: hidden;
   background-color: #000000;
