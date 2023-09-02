@@ -107,3 +107,78 @@
   justify-content: space-between;
   flex-direction: row;
 }
+
+.customercards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.customercard {
+  margin: 10px 20px;
+  background-color: white;
+  width: 300px;
+  min-width: 250px;
+}
+.ourwork {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #333333;
+  justify-content: space-around;
+}
+.card {
+  text-align: center;
+}
+.ourwordcard {
+  background: none;
+  color: white;
+  font-family: "system-ui";
+}
+.ourwordcard p {
+  margin-top: 10px;
+}
+.imagecustomer img {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+}
+.customercontent {
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+}
+.customercontent h5 {
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 31px;
+}
+
+.follow-text {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 45px;
+  background-color: #009688;
+  color: white;
+  border: 5px solid #009688;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}

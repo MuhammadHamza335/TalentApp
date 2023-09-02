@@ -43,3 +43,50 @@ teamMembersData.forEach((member) => {
   const memberCardHTML = generateTeamMemberCard(member);
   teamMembersContainer.innerHTML += memberCardHTML;
 });
+const customerData = [
+  {
+    imgSrc: "images/img_snowtops.jpg",
+    name: "Customer 1",
+    trade: "Trade",
+    info1: "Blablaa",
+    info2: "Blablaa",
+    info3: "Blablaa",
+  },
+  {
+    imgSrc: "images/img_lights.jpg",
+    name: "Customer 2",
+    trade: "Trade",
+    info1: "Blablaa",
+    info2: "Blablaa",
+    info3: "Blablaa",
+  },
+  {
+    imgSrc: "images/img_mountains.jpg",
+    name: "Customer 3",
+    trade: "Trade",
+    info1: "Blablaa",
+    info2: "Blablaa",
+    info3: "Blablaa",
+  },
+];
+function generateCustomerCard(customer) {
+  return `
+  <div class="customercard">
+    <div class="imagecustomer">
+      <img src="${customer.imgSrc}" alt="pic" />
+    </div>
+    <div class="customercontent">
+      <h3>${customer.name}</h3>
+      <h5>${customer.trade}</h5>
+      <h5>${customer.info1}</h5>
+      <h5>${customer.info2}</h5>
+      <h5>${customer.info3}</h5>
+    </div>
+  </div>
+  `;
+}
+const customerCardsContainer = document.getElementById("customerCards");
+customerData.forEach((customer) => {
+  const customerCardHTML = generateCustomerCard(customer);
+  customerCardsContainer.innerHTML += customerCardHTML;
+});
